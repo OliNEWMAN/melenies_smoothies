@@ -20,7 +20,7 @@ st.write("The name on your smoothie will be", name_on_order)
 
 
 # st.write("You selected:", option)
-cnx = st.conmnection("snowflake")
+cnx = st.connection("snowflake")
 session = cnx.session()
 #st.write(session)
 my_dataframe = session.table("SMOOTHIES.PUBLIC.FRUIT_OPTIONS")#.select(col('Fruit_Name'))
